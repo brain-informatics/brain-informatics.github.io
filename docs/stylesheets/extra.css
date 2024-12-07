@@ -16,18 +16,38 @@
     }
 
     img.custom_logo_width {
-        height: 2.0rem !important;
+        height: 1.5rem !important;
     }
 }
 
 /* Gradient Background*/
 body {
     background-image: radial-gradient(circle, #c7cfda, #d6dae3, #e5e6ec, #f2f2f6, #ffffff);
+    animation: gradient-animation 20s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 /* Center align elements */
 .center_align {
     text-align: center;
+}
+
+/* Justified text */
+.justified_text{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Custom columns for grid-view for Responsive Web Design */
@@ -136,6 +156,7 @@ div.custom_admonition {
     border-right-color: #bec1c6a9;
     border-bottom-color: #bec1c6a9; */
     border-left-width: 4px;
+    background-color: transparent;
 }
 
 /* .custom_admonition > .admonition > .admonition-title,
