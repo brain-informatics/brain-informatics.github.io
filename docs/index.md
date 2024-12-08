@@ -30,41 +30,52 @@ Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students co
 
 # Recent Research
 
-<div class="grid cards" markdown>
-
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
-
-    ---
-
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
-
-    [:octicons-arrow-right-24: Getting started](#)
-
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
-
-    ---
-
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
-
+<div class="carousel_wrapper">
+    <div class="carousel_container">
+        <input class="carousel_input" type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="carousel_card">
+            <div class="carousel_row">
+                <div class="carousel_icon">1</div>
+                <div class="carousel_description">
+                    <h4>Winter</h4>
+                    <p>Winter has so much to offer -
+                        creative activities</p>
+                </div>
+            </div>
+        </label>
+        <input class="carousel_input" type="radio" name="slide" id="c2" >
+        <label for="c2" class="carousel_card">
+            <div class="carousel_row">
+                <div class="carousel_icon">2</div>
+                <div class="carousel_description">
+                    <h4>Digital Technology</h4>
+                    <p>Gets better every day -
+                        stay tuned</p>
+                </div>
+            </div>
+        </label>
+        <input class="carousel_input" type="radio" name="slide" id="c3" >
+        <label for="c3" class="carousel_card">
+            <div class="carousel_row">
+                <div class="carousel_icon">3</div>
+                <div class="carousel_description">
+                    <h4>Globalization</h4>
+                    <p>Help people all over the world</p>
+                </div>
+            </div>
+        </label>
+        <input class="carousel_input" type="radio" name="slide" id="c4" >
+        <label for="c4" class="carousel_card">
+            <div class="carousel_row">
+                <div class="carousel_icon">4</div>
+                <div class="carousel_description">
+                    <h4>New technologies</h4>
+                    <p>Space engineering becomes
+                        more and more advanced</p>
+                </div>
+            </div>
+        </label>
+    </div>
 </div>
 
 ---

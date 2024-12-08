@@ -66,6 +66,10 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/carousel.css
+
+extra_javascript:
+  - javascripts/carousel.js
   
 hooks:
   - recent_post_hook.py
