@@ -14,15 +14,14 @@
 
 .carousel_card {
     width: 0px;
-    border-radius: .75rem;
+    border-radius: 8px;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 2rem;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    /* box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8); */
 
     /* background-size: cover;  */
     background-position: center;
@@ -55,8 +54,8 @@
     width: 520px;
     opacity: 0;
     transform: translateY(30px);
-    transition-delay: .3s;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .carousel_description p {
@@ -79,7 +78,7 @@
 }
 
 .carousel_input:checked + label.carousel_card {
-    width: 700px;
+    width: 800px;
     margin: 0 10px;
 }
 
@@ -99,41 +98,58 @@
 }
 
 .carousel_card[for="c1"] {
-    background-image: url('/assets/img1.jpeg');
+    background-image: url("/assets/desktop/img1.png");
 }
 .carousel_card[for="c2"] {
-    background-image: url('/assets/img2.jpeg');
+    background-image: url("/assets/desktop/img2.png");
 }
 .carousel_card[for="c3"] {
-    background-image: url('/assets/img3.jpeg');
+    background-image: url("/assets/desktop/img3.png");
 }
 .carousel_card[for="c4"] {
-    background-image: url('/assets/img4.jpeg');
+    background-image: url("/assets/img4.jpeg");
 }
 
-
-@media only screen and (max-width: 900px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 1200px) {
+    /* For smaller screens with touch: */
 
     .carousel_wrapper {
         display: block;
     }
-    
+
     .carousel_input:checked + label.carousel_card {
         width: 80%;
         margin: 0 5px;
     }
-    
+
     .carousel_input:checked + label + input + label {
         width: 15%;
         margin: 0 5px;
     }
-    
+
     .carousel_input:checked + label + input + label + input + label {
         width: 0px;
     }
 
     .carousel_input_previous {
         width: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* For phone screens */
+
+    .carousel_container {
+        height: 445px;
+    }
+
+    .carousel_card[for="c1"] {
+        background-image: url("/assets/phone/img1.png");
+    }
+    .carousel_card[for="c2"] {
+        background-image: url("/assets/phone/img2.png");
+    }
+    .carousel_card[for="c3"] {
+        background-image: url("/assets/phone/img3.png");
     }
 }
