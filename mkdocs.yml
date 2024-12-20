@@ -28,11 +28,7 @@ theme:
 nav:
   - index.md
   - publications.md
-  - projects.md
   - news.md
-  - CV: cv_anupam.pdf
-  - Blog:
-    - blog/index.md
 
 markdown_extensions: 
   - tables
