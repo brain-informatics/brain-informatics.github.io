@@ -1,3 +1,9 @@
+/*
+Thanks to: https://github.com/webtutorialsw/css_sliding_cards.git
+Inspired from `https://m3.material.io/components/carousel/overview` and the design in
+`https://devin.ai/`
+*/
+
 .carousel_wrapper {
     width: 100%;
     display: flex;
