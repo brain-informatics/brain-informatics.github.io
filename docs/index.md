@@ -21,7 +21,7 @@ hide:
 </div>
 
 <div class="custom_col-12 justified_text" markdown>
-Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students collaborate on groundbreaking research in computational neuroscience. We explore a wide range of topics, including meditation, music, brain-computer interfaces, emotions, decision-making, brain disorders, movie-watching, and neuro-inspired AI. Our research combines innovative experimental and analytical techniques such as psychophysics, eye tracking, brain imaging (EEG, fMRI), and computational modeling (Reinforcement learning, Bayesian approaches) to deepen our understanding of the brain and its functions.
+Welcome to BraIn Lab at IIT Gandhinagar, where diverse and motivated students collaborate on groundbreaking research in computational neuroscience. We explore a wide range of topics, including meditation, music, brain-computer interfaces, emotions, decision-making, brain disorders, movie-watching, and neuro-inspired AI. Our research combines innovative experimental and analytical techniques such as psychophysics, eye tracking, brain imaging (EEG, fMRI), and computational modeling (Reinforcement learning, Bayesian approaches) to deepen our understanding of the brain and its functions.
 </div>
 
 </div>
@@ -37,9 +37,7 @@ Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students co
             <div class="carousel_row">
                 <div class="carousel_icon">1</div>
                 <div class="carousel_description">
-                    <h4>Winter</h4>
-                    <p>Winter has so much to offer -
-                        creative activities</p>
+                    <h4><a class="pub_button pub_button_clickable">Read More</a></h4>
                 </div>
             </div>
         </label>
@@ -48,9 +46,7 @@ Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students co
             <div class="carousel_row">
                 <div class="carousel_icon">2</div>
                 <div class="carousel_description">
-                    <h4>Digital Technology</h4>
-                    <p>Gets better every day -
-                        stay tuned</p>
+                    <h4><a class="pub_button pub_button_clickable">Read More</a></h4>
                 </div>
             </div>
         </label>
@@ -59,8 +55,7 @@ Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students co
             <div class="carousel_row">
                 <div class="carousel_icon">3</div>
                 <div class="carousel_description">
-                    <h4>Globalization</h4>
-                    <p>Help people all over the world</p>
+                    <h4><a class="pub_button pub_button_clickable">Read More</a></h4>
                 </div>
             </div>
         </label>
@@ -69,9 +64,7 @@ Welcome to BraIn Lab at IIt Gandhinagar, where diverse and motivated students co
             <div class="carousel_row">
                 <div class="carousel_icon">4</div>
                 <div class="carousel_description">
-                    <h4>New technologies</h4>
-                    <p>Space engineering becomes
-                        more and more advanced</p>
+                    <h4><a class="pub_button pub_button_clickable">Read More</a></h4>
                 </div>
             </div>
         </label>
