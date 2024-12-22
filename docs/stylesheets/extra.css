@@ -118,21 +118,25 @@ div.custom_table table {
     font-weight: 500;
     font-size: 1em;
     padding: 0em 0.3em 0em 0.3em;
-}
-
-.pub_button_clickable {
     cursor: pointer;
     transition: color 125ms, background-color 125ms, border-color 125ms;
 }
 
-.pub_button_clickable:focus, .pub_button_clickable:hover {
+.pub_button:focus, .pub_button:hover {
     background-color: var(--md-accent-fg-color);
     border-color: var(--md-accent-fg-color);
     color: var(--md-accent-bg-color) !important;
 }
 
-.pub_button_clickable a:focus, .pub_button_clickable a:hover{
+.pub_button a:focus, .pub_button a:hover{
     color: var(--md-accent-bg-color) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .pub_button {
+      margin-bottom: 5px;
+    }
 }
 
 /* Custom admonitions */
@@ -231,9 +235,8 @@ div.custom_admonition {
     color: #007bff !important;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .extra_space_in_phones {
-      margin-bottom: 5px;
-    }
+/*Make blog links unclickable*/
+h2.no-click a {
+    pointer-events: none;
+    cursor: default;
 }
