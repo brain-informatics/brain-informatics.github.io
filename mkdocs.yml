@@ -66,11 +66,14 @@ plugins:
       post_date_format: yyyy
       blog_toc: false
       post_readtime: false
-      pagination: false
+      pagination: true
       archive: false
   - blog:
       blog_dir: news
-      pagination: false
+      post_date_format: yyyy
+      blog_toc: false
+      post_readtime: false
+      pagination: true
       archive: false
 
 extra_css:
