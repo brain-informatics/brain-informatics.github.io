@@ -3,6 +3,7 @@ title: Home
 hide:
   - navigation
   - toc
+template: home.html
 ---
 
 ### 
@@ -72,9 +73,4 @@ Welcome to BraIn Lab at IIT Gandhinagar, where diverse and motivated students co
 </div>
 
 ---
-
-# Recent News
-
-
-[All News](news/index.md){ .pub_button} 
 
