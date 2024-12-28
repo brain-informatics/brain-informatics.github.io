@@ -31,6 +31,7 @@ nav:
     - publications/index.md
   - News:
     - news/index.md
+  - team.md
 
 markdown_extensions: 
   - tables
@@ -74,6 +75,7 @@ plugins:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/carousel.css
+  - stylesheets/team.css
 
 extra_javascript:
   - javascripts/carousel.js

@@ -120,6 +120,7 @@ div.custom_table table {
     padding: 0em 0.3em 0em 0.3em;
     cursor: pointer;
     transition: color 125ms, background-color 125ms, border-color 125ms;
+    margin-bottom: 5px;
 }
 
 .pub_button:focus, .pub_button:hover {
