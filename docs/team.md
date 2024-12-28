@@ -189,6 +189,19 @@ hide:
       </div>
     </div>
   </div>
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="/assets/team/pradipto.jpg" alt="Pradipto" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Pradipto</h2>
+        <p class="ttitle">M.Sc. | Joined - 2023</p>
+        <p>Brainwave entrainment, Morality, Cognitive Modelling, Evolutionary Neuropsychology</p>
+        <p><a href="mailto:pradipto.23510081@iitgn.ac.in" class="pub_button">pradipto.23510081@iitgn.ac.in</a></p>
+        <div style="height:10.52px;"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## BTech Students
