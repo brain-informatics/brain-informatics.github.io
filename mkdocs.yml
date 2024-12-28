@@ -32,6 +32,7 @@ nav:
   - News:
     - news/index.md
   - team.md
+  - contact.md
 
 markdown_extensions: 
   - tables
