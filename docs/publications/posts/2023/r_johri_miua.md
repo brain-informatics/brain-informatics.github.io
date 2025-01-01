@@ -2,7 +2,7 @@
 draft: false
 date: 2023-07-19 
 categories:
-  - MIUA'24
+  - MIUA
 ---
 
 # Decoding Individual and Shared Experiences of Media Perception Using CNN Architectures {.no-click}

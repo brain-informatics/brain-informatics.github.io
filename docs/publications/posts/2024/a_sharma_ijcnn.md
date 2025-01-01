@@ -2,7 +2,7 @@
 draft: false
 date: 2024-09-09 
 categories:
-  - IJCNN'24
+  - IJCNN
 ---
 
 # Evaluating Fast Adaptability of Neural Networks for Brain-Computer Interface {.no-click}

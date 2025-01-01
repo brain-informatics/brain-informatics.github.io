@@ -2,7 +2,7 @@
 draft: false
 date: 2023-01-23 
 categories:
-  - APSCON'23
+  - APSCON
 ---
 
 # Brain activity recognition using deep electroencephalography representation {.no-click}

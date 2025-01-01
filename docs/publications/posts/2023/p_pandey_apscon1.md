@@ -2,7 +2,7 @@
 draft: false
 date: 2023-01-23 
 categories:
-  - APSCON'23
+  - APSCON
 ---
 
 # Detecting moments of distraction during meditation practice based on changes in the EEG signal {.no-click}

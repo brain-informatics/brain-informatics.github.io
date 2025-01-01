@@ -2,7 +2,7 @@
 draft: false
 date: 2023-01-23 
 categories:
-  - APSCON'23
+  - APSCON
 ---
 
 # Stronger correlation of music features with brain signals predicts increased levels of enjoyment {.no-click}

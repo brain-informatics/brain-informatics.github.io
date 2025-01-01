@@ -2,7 +2,7 @@
 draft: false
 date: 2024-01-04
 categories:
-  - CODS-COMAD'24
+  - CODS-COMAD
 ---
 
 # Enhancing Motor Imagery based Brain Computer Interfaces for Stroke Rehabilitation {.no-click}

@@ -2,7 +2,7 @@
 draft: false
 date: 2024-04-09
 categories:
-  - WACV'24
+  - WACV
 ---
 
 # Learning Robust Deep Visual Representations From EEG Brain Recordings {.no-click}

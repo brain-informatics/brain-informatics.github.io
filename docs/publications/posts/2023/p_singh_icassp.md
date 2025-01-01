@@ -2,7 +2,7 @@
 draft: false
 date: 2023-06-04 
 categories:
-  - ICASSP'23
+  - ICASSP
 ---
 
 # EEG2IMAGE: image reconstruction from EEG brain signals {.no-click}
