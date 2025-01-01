@@ -50,9 +50,9 @@ hide:
       -->
       <img src="/assets/team/prajwal.jpg" alt="Prajwal Kumar Singh" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Prajwal Kumar Singha</h2>
-        <p class="ttitle">Joined - 2021</p>
-        <p>Computer Vision, Image Processing, Representation Learning, Deep Learning</p>
+        <h2>Prajwal Kumar Singh</h2>
+        <p class="ttitle">Joined - 2021 (Jointly with CVIG Lab, IITGN)</p>
+        <p>Computer Vision, Image Processing, Deep Learning</p>
         <p><a href="mailto:singh_prajwal@iitgn.ac.in" class="pub_button">singh_prajwal@iitgn.ac.in</a> </br> <a href="https://prajwalsingh.github.io/" class="pub_button" target="_blank">Website</a></p>
       </div>
     </div>
@@ -153,12 +153,13 @@ hide:
       <img src="/assets/team/rucha.webp" alt="Rucha Mehta" style="height:222.06px; width: auto; margin-left:auto; margin-right: auto;">
       </div>
       -->
-      <img src="/assets/team/rucha.png" alt="Rucha Mehta" style="width:100%">
+      <img src="/assets/team/atharv.jpg" alt="Atharv" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Rucha Mehta</h2>
-        <p class="ttitle">M.Tech. | Joined - 2023</p>
-        <p>Neuroimaging</p>
-        <p><a href="mailto:rucha.mehta@iitgn.ac.in" class="pub_button">rucha.mehta@iitgn.ac.in</a> </br> <a href="http://www.linkedin.com/in/rucha-mehta-87a454218" class="pub_button" target="_blank">Profile</a></p>
+        <h2>Atharv Nangare</h2>
+        <p class="ttitle">M.Sc. | Joined - 2023</p>
+        <p>Memory, Cognitive Neuroscience, Computation and Cognition</p>
+        <p><a href="mailto:atharv.nangare@iitgn.ac.in" class="pub_button">atharv.nangare@iitgn.ac.in</a> </p>
+        <div style="height:11.52px;"></div>
       </div>
     </div>
   </div>
@@ -173,19 +174,19 @@ hide:
         <p class="ttitle">M.Sc. | Joined - 2023</p>
         <p></p>
         <p><a href="mailto:bodranimisha@iitgn.ac.in" class="pub_button">bodranimisha@iitgn.ac.in</a> </br> <a href="http://www.linkedin.com/in/nimisha-b-a810a8129" class="pub_button" target="_blank">Profile</a></p>
-        <div style="height:58.52px;"></div>
+        <div style="height:134.52px;"></div>
       </div>
     </div>
   </div>
 
   <div class="tcolumn">
     <div class="tcard">
-      <img src="/assets/team/shreya.jpg" alt="Shreya Gakhar" style="width:100%">
+      <img src="/assets/team/shweta.jpg" alt="Shweta" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Shreya Gakhar</h2>
+        <h2>Shweta Anand</h2>
         <p class="ttitle">M.Sc. | Joined - 2023</p>
-        <p>Motor movement, Decision Making, BCI, Attention</p>
-        <p><a href="mailto:shreya.gakhar@iitgn.ac.in" class="pub_button">shreya.gakhar@iitgn.ac.in</a> </br> <a href="http://www.linkedin.com/in/shreya-gakhar" class="pub_button" target="_blank">Profile</a></p>
+        <p>Cognitive & Behavioural Neuroscience, Phenomenology, Neuromarketing, Criminal Psychology, Attention & Perception, Neurodegenerative Diseases, Clinical Audit, Animal Behaviour</p>
+        <p><a href="mailto:shweta.anand@iitgn.ac.in" class="pub_button">shweta.anand@iitgn.ac.in</a> </p>
       </div>
     </div>
   </div>
@@ -198,7 +199,7 @@ hide:
         <p class="ttitle">M.Sc. | Joined - 2023</p>
         <p>Brainwave entrainment, Morality, Cognitive Modelling, Evolutionary Neuropsychology</p>
         <p><a href="mailto:pradipto.23510081@iitgn.ac.in" class="pub_button">pradipto.23510081@iitgn.ac.in</a></p>
-        <div style="height:10.52px;"></div>
+        <div style="height:85.52px;"></div>
       </div>
     </div>
   </div>
