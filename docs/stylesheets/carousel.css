@@ -161,10 +161,10 @@ Inspired from `https://m3.material.io/components/carousel/overview` and the desi
     .carousel_card[for="c3"] {
         background-image: url("/assets/phone/img3.png");
     }
-    .carousel_card[for="c3"] {
+    .carousel_card[for="c4"] {
         background-image: url("/assets/phone/img4.png");
     }
-    .carousel_card[for="c3"] {
+    .carousel_card[for="c5"] {
         background-image: url("/assets/phone/img5.png");
     }
 }
