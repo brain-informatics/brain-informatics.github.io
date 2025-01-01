@@ -72,5 +72,5 @@ Welcome to BraIn Lab at IIT Gandhinagar, where diverse and motivated students co
     </div>
 </div>
 
----
+
 
