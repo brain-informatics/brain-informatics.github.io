@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-For postail mail use the following address:
+For postal mail use the following address:
 
 > Dr. Krishna P. Miyapuram <br>
 > 315B, Academic Building 5 <br>
