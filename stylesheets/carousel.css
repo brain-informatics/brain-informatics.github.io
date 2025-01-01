@@ -1,0 +1,170 @@
+/*
+Thanks to: https://github.com/webtutorialsw/css_sliding_cards.git
+Inspired from `https://m3.material.io/components/carousel/overview` and the design in
+`https://devin.ai/`
+*/
+
+.carousel_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.carousel_card {
+    width: 0px;
+    border-radius: 8px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    /* box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8); */
+
+    /* background-size: cover;  */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+.carousel_card > .carousel_row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel_card > .carousel_row > .carousel_icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.carousel_card > .carousel_row > .carousel_description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.carousel_description p {
+    color: #b0b0ba;
+    margin: 0;
+}
+
+.carousel_description h4 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel_input {
+    display: none;
+}
+
+.carousel_input_previous {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.carousel_input:checked + label.carousel_card {
+    width: 800px;
+    margin: 0 10px;
+}
+
+.carousel_input:checked + label + input + label {
+    width: 200px;
+    margin: 0 10px;
+}
+
+.carousel_input:checked + label + input + label + input + label {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.carousel_input:checked + label.carousel_card .carousel_description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.carousel_card[for="c1"] {
+    background-image: url("/assets/desktop/img1.png");
+}
+.carousel_card[for="c2"] {
+    background-image: url("/assets/desktop/img2.png");
+}
+.carousel_card[for="c3"] {
+    background-image: url("/assets/desktop/img3.png");
+}
+.carousel_card[for="c4"] {
+    background-image: url("/assets/desktop/img4.png");
+}
+.carousel_card[for="c5"] {
+    background-image: url("/assets/desktop/img5.png");
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For smaller screens with touch: */
+
+    .carousel_wrapper {
+        display: block;
+    }
+
+    .carousel_input:checked + label.carousel_card {
+        width: 80%;
+        margin: 0 5px;
+    }
+
+    .carousel_input:checked + label + input + label {
+        width: 15%;
+        margin: 0 5px;
+    }
+
+    .carousel_input:checked + label + input + label + input + label {
+        width: 0px;
+    }
+
+    .carousel_input_previous {
+        width: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* For phone screens */
+
+    .carousel_container {
+        height: 445px;
+    }
+
+    .carousel_card[for="c1"] {
+        background-image: url("/assets/phone/img1.png");
+    }
+    .carousel_card[for="c2"] {
+        background-image: url("/assets/phone/img2.png");
+    }
+    .carousel_card[for="c3"] {
+        background-image: url("/assets/phone/img3.png");
+    }
+    .carousel_card[for="c4"] {
+        background-image: url("/assets/phone/img4.png");
+    }
+    .carousel_card[for="c5"] {
+        background-image: url("/assets/phone/img5.png");
+    }
+}
