@@ -13,7 +13,7 @@ theme:
     primary: white
     accent: blue
   font:
-    text: Fira Mono
+    text: Space Grotesk
     code: Fira Code
   features:
     - navigation.top
@@ -61,6 +61,7 @@ markdown_extensions:
 plugins:
   - glightbox
   - search
+  - tags
   - blog:
       blog_dir: publications
       post_date_format: yyyy
@@ -80,9 +81,15 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/carousel.css
   - stylesheets/team.css
+  - stylesheets/recent_publications.css
 
 extra_javascript:
   - javascripts/carousel.js
-  
+
+extra:
+  # If true, the homepage "Recent Publications" section (recent_post_hook.py)
+  # only shows the latest non-Preprint publications.
+  filter_preprint: true
+
 hooks:
   - recent_post_hook.py
