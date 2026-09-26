@@ -6,7 +6,7 @@ categories:
 tags:
   - APSCON
 direct_link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=R20YmxkAAAAJ&citation_for_view=R20YmxkAAAAJ:_Ybze24A_UAC
-image: https://uce209302b6fa23126e351b4eb93.dl.dropboxusercontent.com/cd/0/inline/DI39irBRCbuTvWZqhxgZXjydtI0-WNaisOehLOHSAyf1NxS5STjZ3Z6JE2-0f7qTHPNQL0Cp0ZmgNxNTQwUgvqdJAyk23Tt3Bn4GcwziABZaHEbIsooLiN_k06NZX5rgG1UHw81ETybjx9ncJD3Vi28e/file#
+image: https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/pub_cards/p_pandey_apscon.png
 ---
 
 # Canonical Correlation Approach for Predicting Music Aesthetic Ratings from EEG Sensors {.no-click}
