@@ -12,7 +12,7 @@ hide:
       <img src="/assets/team/kprasad.jpg" alt="Krishna" style="width:100%">
       <div class="tcontainer" markdown="1">
         <h2>Krishna Prasad Miyapuram</h2>
-        <p class="ttitle">Associate Professor</p>
+        <p class="ttitle">Professor</p>
         <p>Neuroeconomics & Neuromarketing, Computational Cognitive Science, Neuroimaging (EEG, fMRI) & Brain Computer Interface, Machine Learning & Artificial Intelligence.</p>
         <p><a href="mailto:kprasad@iitgn.ac.in" class="pub_button">kprasad@iitgn.ac.in</a> <a href="https://cogs.iitgn.ac.in/team/krishna-prasad-miyapuram/" class="pub_button" target="_blank">Website</a></p>
       </div>
@@ -24,39 +24,7 @@ hide:
 ---
 
 <div class="trow">
-  <div class="tcolumn">
-    <div class="tcard">
-      <!--
-      <div style="text-align:center;">
-      <img src="/assets/team/shriraj.jfif" alt="Shriraj Sawant" style="height:218.21px; width: auto; margin-left:auto; margin-right: auto;">
-      </div>
-      -->
-      <img src="/assets/team/shriraj.png" alt="Shriraj Sawant" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Shriraj Sawant</h2>
-        <p class="ttitle">Joined - 2019</p>
-        <p>A.I., Brain Science, Deep Learning, Continual Learning, Catastrophic Forgetting</p>
-        <p><a href="mailto:sawant_shriraj@iitgn.ac.in" class="pub_button">sawant_shriraj@iitgn.ac.in</a> <a href="https://www.linkedin.com/in/shriraj-aka-sr13/" class="pub_button" target="_blank">Profile</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tcolumn">
-    <div class="tcard">
-      <!--
-      <div style="text-align:center;">
-      <img src="/assets/team/prajwal.png" alt="Prajwal Kumar Singh" style="height:218.21px; width: auto; margin-left:auto; margin-right: auto;">
-      </div>
-      -->
-      <img src="/assets/team/prajwal.jpg" alt="Prajwal Kumar Singh" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Prajwal Kumar Singh</h2>
-        <p class="ttitle">Joined - 2021 (Jointly with CVIG Lab, IITGN)</p>
-        <p>Computer Vision, Image Processing, Deep Learning</p>
-        <p><a href="mailto:singh_prajwal@iitgn.ac.in" class="pub_button">singh_prajwal@iitgn.ac.in</a> </br> <a href="https://prajwalsingh.github.io/" class="pub_button" target="_blank">Website</a></p>
-      </div>
-    </div>
-  </div>
+  
 
   <div class="tcolumn">
     <div class="tcard">
@@ -70,10 +38,6 @@ hide:
     </div>
   </div>
 
-  
-</div>
-
-<div class="trow">
   <div class="tcolumn">
     <div class="tcard">
       <img src="/assets/team/muskan.jpg" alt="Muskan Priyadarshani" style="width:100%">
@@ -82,7 +46,7 @@ hide:
         <p class="ttitle">Joined - 2023</p>
         <p>Machine Leaning, Deep Learning, AI, EEG, Emotion Recognition</p>
         <p><a href="mailto:muskan.priyadarshani@iitgn.ac.in" class="pub_button">muskan.priyadarshani@iitgn.ac.in</a> </br> <a href="https://www.linkedin.com/in/muskan-priyadarshani-8331751bb/" class="pub_button" target="_blank">Profile</a></p>
-        <div style="height:34.16px;"></div>
+        <div style="height:20px;"></div>
       </div>
     </div>
   </div>
@@ -95,10 +59,16 @@ hide:
         <p class="ttitle">Joined - 2023</p>
         <p>Eye tracking, Emotion Recognition, Social Cognition, Decision Making, fMRI</p>
         <p><a href="mailto:praneetha.matrapu@iitgn.ac.in" class="pub_button">praneetha.matrapu@iitgn.ac.in</a> </br> <a href="https://www.linkedin.com/in/praneetha-teja-857370193/" class="pub_button" target="_blank">Profile</a></p>
+        <div style="height:20px;"></div>
       </div>
     </div>
   </div>
 
+  
+</div>
+
+<div class="trow">
+  
   <div class="tcolumn">
     <div class="tcard">
       <img src="/assets/team/anupam.JPG" alt="Anupam Sharma" style="width:100%">
@@ -107,10 +77,29 @@ hide:
         <p class="ttitle">Joined - 2024</p>
         <p>Brain-Computer Interface, EEG, Deep learning, Representation learning, Meta-learning</p>
         <p><a href="mailto:sharmaanupam@iitgn.ac.in" class="pub_button">sharmaanupam@iitgn.ac.in</a> </br> <a href="https://anp-scp.github.io" class="pub_button" target="_blank">Website</a></p>
-        <div style="height:34.16px;"></div>
+        
       </div>
     </div>
   </div>
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <!--
+      <div style="text-align:center;">
+      <img src="/assets/team/rucha.webp" alt="Rucha Mehta" style="height:222.06px; width: auto; margin-left:auto; margin-right: auto;">
+      </div>
+      -->
+      <img src="/assets/team/atharv.jpg" alt="Atharv" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Atharv Nangare</h2>
+        <p class="ttitle">Joined - 2025</p>
+        <p>Memory, Cognitive Neuroscience, Computation and Cognition</p>
+        <p><a href="mailto:atharv.nangare@iitgn.ac.in" class="pub_button">atharv.nangare@iitgn.ac.in</a> </p>
+        <div style="height:45px;"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 ## Masters Students
@@ -146,23 +135,7 @@ hide:
     </div>
   </div>
 
-  <div class="tcolumn">
-    <div class="tcard">
-      <!--
-      <div style="text-align:center;">
-      <img src="/assets/team/rucha.webp" alt="Rucha Mehta" style="height:222.06px; width: auto; margin-left:auto; margin-right: auto;">
-      </div>
-      -->
-      <img src="/assets/team/atharv.jpg" alt="Atharv" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Atharv Nangare</h2>
-        <p class="ttitle">M.Sc. | Joined - 2023</p>
-        <p>Memory, Cognitive Neuroscience, Computation and Cognition</p>
-        <p><a href="mailto:atharv.nangare@iitgn.ac.in" class="pub_button">atharv.nangare@iitgn.ac.in</a> </p>
-        <div style="height:11.52px;"></div>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 <div class="trow">
@@ -205,35 +178,7 @@ hide:
   </div>
 </div>
 
-## BTech Students
----
 
-<div class="trow">
-  <div class="tcolumn">
-    <div class="tcard">
-      <img src="/assets/team/nikhilesh.png" alt="Nikhilesh Myanapuri " style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Nikhilesh Myanapuri </h2>
-        <p class="ttitle">Joined - 2024</p>
-        <p>Computational Neuroscience, Reinforcement Learning, Neuromorphic Computing, Brain-Computer Interfaces</p>
-        <p><a href="mailto:nikhilesh.myanapuri@iitgn.ac.in" class="pub_button">nikhilesh.myanapuri@iitgn.ac.in</a> </br> <a href="https://www.linkedin.com/in/nikhilesh-myanapuri-283859167" class="pub_button" target="_blank">Profile</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tcolumn">
-    <div class="tcard">
-      <img src="/assets/team/sridhar.jpg" alt="Sridhar Singh" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Sridhar Singh</h2>
-        <p class="ttitle">Joined - 2024</p>
-        <p>Continuum Mechanics, Finite Element Analysis, Engineering Design and Product Design</p>
-        <p><a href="mailto:sridharsingh.thakur@iitgn.ac.in" class="pub_button">sridharsingh.thakur@iitgn.ac.in</a> </br> <a href="http://www.linkedin.com/in/sri-singh" class="pub_button" target="_blank">Profile</a></p>
-        <div style="height:21.52px;"></div>
-      </div>
-    </div>
-  </div>
-</div>
 <div style="height:21.52px;"></div>
 
 # Alumni
