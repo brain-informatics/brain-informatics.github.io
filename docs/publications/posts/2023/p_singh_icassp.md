@@ -2,7 +2,11 @@
 draft: false
 date: 2023-06-04 
 categories:
+  - Conference
+tags:
   - ICASSP
+image: assets/pub_cards/img5.png
+direct_link: https://doi.org/10.1109/ICASSP49357.2023.10096587
 ---
 
 # EEG2IMAGE: image reconstruction from EEG brain signals {.no-click}

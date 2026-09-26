@@ -2,7 +2,10 @@
 draft: false
 date: 2023-01-23 
 categories:
+  - Conference
+tags:
   - APSCON
+direct_link: https://doi.org/10.1109/APSCON56343.2023.10101045
 ---
 
 # Detecting moments of distraction during meditation practice based on changes in the EEG signal {.no-click}

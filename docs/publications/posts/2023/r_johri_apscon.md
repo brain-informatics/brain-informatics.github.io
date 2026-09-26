@@ -2,7 +2,10 @@
 draft: false
 date: 2023-01-23 
 categories:
+  - Conference
+tags:
   - APSCON
+direct_link: https://doi.org/10.1109/APSCON56343.2023.10100986
 ---
 
 # Brain activity recognition using deep electroencephalography representation {.no-click}

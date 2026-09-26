@@ -2,7 +2,11 @@
 draft: false
 date: 2024-01-04
 categories:
+  - Conference
+tags:
   - CODS-COMAD
+image: assets/pub_cards/img2.png
+direct_link: https://doi.org/10.1145/3632410.3632441
 ---
 
 # Enhancing Motor Imagery based Brain Computer Interfaces for Stroke Rehabilitation {.no-click}

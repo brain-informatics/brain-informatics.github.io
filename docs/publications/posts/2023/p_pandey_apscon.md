@@ -2,7 +2,10 @@
 draft: false
 date: 2023-01-23 
 categories:
+  - Conference
+tags:
   - APSCON
+direct_link: https://doi.org/10.1109/APSCON56343.2023.10101229
 ---
 
 # Stronger correlation of music features with brain signals predicts increased levels of enjoyment {.no-click}

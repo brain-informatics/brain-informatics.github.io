@@ -2,7 +2,11 @@
 draft: false
 date: 2024-04-09
 categories:
+  - Conference
+tags:
   - WACV
+image: assets/pub_cards/img3.png
+direct_link: https://doi.org/10.1109/WACV57701.2024.00738
 ---
 
 # Learning Robust Deep Visual Representations From EEG Brain Recordings {.no-click}
