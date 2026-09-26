@@ -1,3 +1,10 @@
+/* Material's default h1 uses a lighter/muted color than body text and h2
+   (--md-default-fg-color--light instead of --md-default-fg-color) — make
+   h1 the same darker shade as h2 everywhere. */
+.md-typeset h1 {
+    color: var(--md-default-fg-color);
+}
+
 /* Icons for custom admonitions */
 :root {
     --md-admonition-icon--pub: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 43 43 0 96 0h96v190.7c0 13.4 15.5 20.9 26 12.5l54-43.2 54 43.2c10.5 8.4 26 .9 26-12.5V0h64c17.7 0 32 14.3 32 32v320c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-53 0-96-43-96-96V96zm64 320c0 17.7 14.3 32 32 32h256v-64H96c-17.7 0-32 14.3-32 32z"/></svg>');
@@ -240,4 +247,101 @@ div.custom_admonition {
 h2.no-click a {
     pointer-events: none;
     cursor: default;
+}
+
+/* Publications index: tighter spacing between entries and after each entry's title */
+.md-post--excerpt {
+    margin-bottom: 1.5rem;
+}
+
+.md-post--excerpt .md-post__content > h2:first-child {
+    margin-bottom: 0.25em;
+}
+
+/* The Authors paragraph's own top margin (not the title's bottom margin)
+   is what actually wins the margin-collapse, so it's the one that must
+   shrink for the gap below the title to visibly change. */
+.md-post--excerpt .md-post__content > h2:first-child + p {
+    margin-top: 0.2em;
+}
+
+/* Homepage: the content column normally ends with a fixed bottom margin
+   before the footer; remove it here so the full-bleed section below can
+   sit flush against the footer instead. */
+.md-content--home .md-content__inner {
+    margin-bottom: 0;
+}
+
+/* Homepage: full-bleed section band, full viewport width like the footer,
+   with its actual content still centered/readable inside. Shared by the
+   white "Research Directions"/"Recent Publications" band and the dark
+   "Get Involved" section below it. */
+.home-band {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.home-band__inner {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+}
+
+.home-band--light {
+    /* Fade in from fully transparent instead of starting flat: since
+       transparent always shows exactly whatever's behind it, the seam
+       against the body's animated gradient above disappears by
+       construction, then eases into the same flat shade used elsewhere
+       in that gradient for the rest of the band. */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(242, 242, 246, 0) 0,
+        #f2f2f6 5rem,
+        #f2f2f6 100%
+    );
+}
+
+.get-involved {
+    background-color: #212121;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.get-involved__inner {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+}
+
+.get-involved,
+.get-involved h1,
+.get-involved p,
+.get-involved strong {
+    color: #ffffff;
+}
+
+.get-involved a:not(.pub_button) {
+    color: #90caf9;
+}
+
+.get-involved a:not(.pub_button):hover,
+.get-involved a:not(.pub_button):focus {
+    color: #bbdefb;
+}
+
+/* Center the Lab/Email/Department block horizontally within its column's
+   width — each block shrinks to its own content width and centers as a
+   unit, while the text inside stays left-aligned (not text-align: center). */
+.get-involved__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
