@@ -33,6 +33,7 @@ nav:
     - publications/index.md
   - team.md
   - contact.md
+  - Join Us: '#get-involved'
 
 markdown_extensions: 
   - tables
@@ -90,6 +91,9 @@ extra:
   # If true, the homepage "Recent Publications" section (recent_post_hook.py)
   # only shows the latest non-Preprint publications.
   filter_preprint: true
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/brain-and-informatics-lab/
 
 hooks:
   - recent_post_hook.py
