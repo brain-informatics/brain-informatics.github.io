@@ -6,24 +6,19 @@ hide:
 template: home.html
 ---
 
-### 
+<div class="custom_row hero" markdown>
+<div class="custom_col-6 hero__logo" markdown>
 
-<div class="custom_row" markdown>
-<div class="custom_col-12 center_align" markdown>
-
-# 
-
-<figure markdown="span">
-  ![Image title](assets/logo_header.png){ width="60%" }
-</figure>
-
-<!-- <p class="custom_title">Anupam Sharma</p> -->
+![Brain & Informatics Lab](assets/logo_header.png)
 
 </div>
 
-<div class="custom_col-12 justified_text" markdown>
-Welcome to BraIn Lab at IIT Gandhinagar, where diverse and motivated students collaborate on groundbreaking research in computational neuroscience. We explore a wide range of topics, including meditation, music, brain-computer interfaces, emotions, decision-making, brain disorders, movie-watching, and neuro-inspired AI. Our research combines innovative experimental and analytical techniques such as psychophysics, eye tracking, brain imaging (EEG, fMRI), and computational modeling (Reinforcement learning, Bayesian approaches) to deepen our understanding of the brain and its functions.
+<div class="custom_col-6 hero__text">
+<div>
+<h1 class="hero__tagline">We study how the brain processes sound, music and vision, and decode it for brain-computer interfaces.</h1>
+<p class="hero__lede">Computational neuroscience at IIT Gandhinagar, using EEG, fMRI, eye tracking and computational models.</p>
+<p><a class="pub_button" href="publications/">Publications</a> <a class="pub_button" href="#get-involved">Join us</a></p>
+</div>
 </div>
 
 </div>
-
