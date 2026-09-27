@@ -11,7 +11,7 @@ theme:
   palette: 
     scheme: default
     primary: white
-    accent: blue
+    accent: indigo
   font:
     text: Space Grotesk
     code: Fira Code
@@ -33,7 +33,7 @@ nav:
     - publications/index.md
   - team.md
   - contact.md
-  - Join Us: '/#get-involved'
+  - Join Us: '#get-involved'
 
 markdown_extensions: 
   - tables
