@@ -67,3 +67,8 @@
 .tbutton:hover {
   background-color: #555;
 }
+
+/* White cards on the off-white page */
+.tcard {
+  background-color: #fff;
+}

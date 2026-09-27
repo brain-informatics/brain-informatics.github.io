@@ -1,8 +1,33 @@
+/* Surface/neutral tokens: a flat warm off-white page, white content
+   bands, warm-grey hairlines and a muted grey for secondary text. Link/button/accent colors are NOT here: they're Material's own
+   original palette (primary: white, accent: blue in mkdocs.yml). */
+:root {
+    --bl-paper: #f6f6f3;
+    --bl-surface: #ffffff;
+    --bl-line: #e5e4dc;
+    --bl-muted: #6b7180;
+}
+
+a:focus-visible,
+.pub_button:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color);
+    outline-offset: 2px;
+}
+
 /* Material's default h1 uses a lighter/muted color than body text and h2
    (--md-default-fg-color--light instead of --md-default-fg-color) — make
-   h1 the same darker shade as h2 everywhere. */
+   h1 the same darker shade as h2 everywhere. Headings are also set at a
+   medium weight instead of Material's thin 300. */
 .md-typeset h1 {
     color: var(--md-default-fg-color);
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+    letter-spacing: -0.015em;
 }
 
 /* Icons for custom admonitions */
@@ -14,35 +39,48 @@
     --md-admonition-icon--event: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 96c0-35.3 28.7-64 64-64h288c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32v272c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24h112c13.3 0 24-10.7 24-24v-80c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16h-48c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16h-48c-8.8 0-16 7.2-16 16zm-208 96c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"/></svg>');
 }
 
-@media screen and (min-width: 800px) {
-    /* Glassy navbar */
-    .md-header, .md-tabs {
-        background-color: transparent; /* Transparent background */
-        backdrop-filter: blur(20px); /* Blur effect */
-        -webkit-backdrop-filter: blur(20px); /* Safari support */
-    }
+/* Glassy navbar, at every width: a light paper tint keeps the nav legible
+   over whatever scrolls under it. */
+.md-header {
+    background-color: rgba(246, 246, 243, 0.72);
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+}
 
+/* The tabs row sits inside .md-header, so it must stay transparent or the
+   two tints stack into a visibly lighter band under the header row. */
+.md-tabs {
+    background-color: transparent;
+    border-bottom: 0.05rem solid var(--bl-line);
+}
+
+@media screen and (min-width: 800px) {
     img.custom_logo_width {
         height: 1.5rem !important;
     }
 }
 
-/* Gradient Background*/
+/* Flat warm off-white page background (replaces the old animated radial
+   gradient). */
 body {
-    background-image: radial-gradient(circle, #c7cfda, #d6dae3, #e5e6ec, #f2f2f6, #ffffff);
-    animation: gradient-animation 20s ease infinite;
-    background-size: 200% 200%;
+    background-color: var(--bl-paper);
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 0%;
+/* Material paints its sticky sidebar titles ("Publications", "Table of
+   contents") in the page's default white, to mask links scrolling under
+   them; match them to the off-white page instead. Same breakpoints as
+   Material's own rules. */
+@media screen and (min-width: 60em) {
+    .md-nav--secondary .md-nav__title {
+        background: var(--bl-paper);
+        box-shadow: 0 0 0.4rem 0.4rem var(--bl-paper);
     }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-nav--primary .md-nav__title {
+        background: var(--bl-paper);
+        box-shadow: 0 0 0.4rem 0.4rem var(--bl-paper);
     }
 }
 
@@ -120,11 +158,11 @@ div.custom_table table {
 .pub_button {
     color: var(--md-typeset-a-color) !important;
     border: .05rem solid;
-    border-radius: 0.1rem;
+    border-radius: 0.2rem;
     display: inline-block;
     font-weight: 500;
     font-size: 1em;
-    padding: 0em 0.3em 0em 0.3em;
+    padding: 0.1em 0.55em;
     cursor: pointer;
     transition: color 125ms, background-color 125ms, border-color 125ms;
     margin-bottom: 5px;
@@ -256,6 +294,8 @@ h2.no-click a {
 
 .md-post--excerpt .md-post__content > h2:first-child {
     margin-bottom: 0.25em;
+    font-size: 1.25em;
+    line-height: 1.35;
 }
 
 /* The Authors paragraph's own top margin (not the title's bottom margin)
@@ -265,17 +305,18 @@ h2.no-click a {
     margin-top: 0.2em;
 }
 
-/* Homepage: the content column normally ends with a fixed bottom margin
-   before the footer; remove it here so the full-bleed section below can
-   sit flush against the footer instead. */
+/* Homepage: the content column normally ends with a fixed bottom margin;
+   remove it here so the white full-bleed band sits flush against the
+   site-wide "Join Us" band below it (other pages keep the margin, so
+   their content gets normal breathing room above "Join Us"). */
 .md-content--home .md-content__inner {
     margin-bottom: 0;
 }
 
 /* Homepage: full-bleed section band, full viewport width like the footer,
-   with its actual content still centered/readable inside. Shared by the
-   white "Research Directions"/"Recent Publications" band and the dark
-   "Get Involved" section below it. */
+   with its actual content still centered/readable inside. Used by the
+   white "Research Directions"/"Recent Publications" band, which lives
+   inside the content column and so has to break out to 100vw. */
 .home-band {
     width: 100vw;
     position: relative;
@@ -291,28 +332,46 @@ h2.no-click a {
     padding: 1.5rem 1.5rem;
 }
 
+/* White content band on the off-white page, alternating paper/white
+   sections: a plain color change marks the section, with no fade and no
+   border. */
 .home-band--light {
-    /* Fade in from fully transparent instead of starting flat: since
-       transparent always shows exactly whatever's behind it, the seam
-       against the body's animated gradient above disappears by
-       construction, then eases into the same flat shade used elsewhere
-       in that gradient for the rest of the band. */
-    background-image: linear-gradient(
-        to bottom,
-        rgba(242, 242, 246, 0) 0,
-        #f2f2f6 5rem,
-        #f2f2f6 100%
-    );
+    background-color: var(--bl-surface);
 }
 
+.home-band--light > .home-band__inner {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Research Directions / Recent Publications cards: same surface as the
+   band, set off only by a warm-grey hairline, with muted body text.
+   Material's own card shape and hover shadow are kept, and as in Material
+   the border drops away on hover. */
+.home-band .md-typeset .grid.cards > ul > li {
+    background-color: var(--bl-surface);
+    border-color: var(--bl-line);
+}
+
+.home-band .md-typeset .research-grid > ul > li > p:not(.research-title) {
+    color: var(--bl-muted);
+}
+
+.home-band .md-typeset .pub-meta {
+    color: var(--bl-muted);
+}
+
+.home-band .md-typeset .grid.cards > ul > li:hover,
+.home-band .md-typeset .grid.cards > ul > li:focus-within {
+    border-color: transparent;
+}
+
+/* "Join Us" band (docs/overrides/partials/join_us.html, on every page via
+   docs/overrides/main.html). It's rendered in Material's full-width
+   .md-container, outside the content column, so it's naturally full-bleed
+   and doesn't need the .home-band 100vw break-out. */
 .get-involved {
     background-color: #212121;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
 }
 
 .get-involved__inner {
@@ -344,4 +403,93 @@ h2.no-click a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Homepage hero (docs/index.md): original wordmark on the left, tagline
+   and actions on the right, vertically centered against each other. Built
+   on the existing custom_row/custom_col-6 pair, which already goes full
+   width at <=768px; flex here only adds the vertical centering. */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 0 1.5rem;
+}
+
+/* custom_row's clearfix pseudo-element would be a stray flex item */
+.hero::after {
+    display: none;
+}
+
+.hero__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Center the tagline/sub-line/buttons horizontally within their column
+   *as one unit* (text stays left-aligned inside it). The single plain
+   inner <div> in docs/index.md is the only flex child and must stay:
+   without it, each piece would center at its own width (a zigzag). */
+.hero__text {
+    display: flex;
+    justify-content: center;
+}
+
+.md-typeset .hero__tagline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    max-width: 21ch;
+    margin: 0 0 0.9rem;
+}
+
+.md-typeset .hero__lede {
+    color: var(--bl-muted);
+    max-width: 42ch;
+    margin: 0 0 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem 0 0.5rem;
+    }
+
+    .hero__logo img {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .md-typeset .hero__tagline {
+        font-size: 1.25rem;
+        max-width: none;
+    }
+}
+
+/* Pin "Join Us" to its original look: the site-wide heading weight/size
+   and .pub_button shape changes above must not reach this band. Values
+   are the pre-refresh computed styles (Material's h1 defaults, and the
+   white/blue palette's link + accent colors, which are also the site's
+   current colors; they're pinned so a future palette change can't leak
+   in either). */
+.get-involved h1 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+
+.get-involved .pub_button {
+    color: #4051b5 !important;
+    border-color: #4051b5;
+    border-radius: 0.1rem;
+    padding: 0em 0.3em 0em 0.3em;
+}
+
+.get-involved .pub_button:focus,
+.get-involved .pub_button:hover {
+    background-color: #4287ff;
+    border-color: #4287ff;
+    color: #fff !important;
 }
