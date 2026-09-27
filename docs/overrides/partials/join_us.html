@@ -1,0 +1,40 @@
+{#-
+  "Join Us" band, shown on every page: docs/overrides/main.html renders it
+  in Material's `footer` block, just above the site footer. Styled by the
+  `.get-involved*` rules in docs/stylesheets/extra.css. All links here are
+  absolute, so it works at any page depth.
+
+  Keep the contact column's markup shape: `.get-involved__contact` on the
+  custom_col-6 itself, with the Lab/Email/Department <p>s wrapped in ONE
+  plain inner <div> (its only flex child), or they zigzag instead of
+  centering as a unit.
+-#}
+<div id="get-involved" class="get-involved">
+  <div class="get-involved__inner md-typeset">
+    <h1>Join Us</h1>
+    <div class="custom_row">
+      <div class="custom_col-6">
+        <p>We welcome curious students interested in computational
+        neuroscience, brain-computer interfaces, and cognitive science
+        research. Prospective students can apply through IIT
+        Gandhinagar's summer research internship and PhD programmes.</p>
+        <p>
+          <a class="pub_button" href="https://srip.iitgn.ac.in/info/" target="_blank">SRIP Internships</a>
+          <a class="pub_button" href="https://iitgn.ac.in/admissions/phd" target="_blank">PhD Admissions</a>
+        </p>
+      </div>
+      <div class="custom_col-6 get-involved__contact">
+        <div>
+          <p><strong>Lab</strong><br>
+          315B, Academic Building 5<br>
+          IIT Gandhinagar, Palaj campus, Gandhinagar<br>
+          Gujarat - 382 355</p>
+          <p><strong>Email</strong><br>
+          <a href="mailto:kprasad@iitgn.ac.in">kprasad@iitgn.ac.in</a></p>
+          <p><strong>Department</strong><br>
+          <a href="https://cogs.iitgn.ac.in/" target="_blank">Cognitive and Brain Sciences</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

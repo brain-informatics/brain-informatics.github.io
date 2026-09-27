@@ -1,0 +1,16 @@
+{#-
+  Site-wide template override. Every page template (Material's own pages,
+  blog.html, blog-post.html, 404.html, and our home.html) extends
+  "main.html", which now resolves here.
+
+  Adds the "Join Us" band (partials/join_us.html) to every page, directly
+  above the footer. Material's `footer` block sits outside <main>, inside
+  the full-width .md-container, so the band spans the viewport on every
+  page, including ones with sidebars.
+-#}
+{% extends "base.html" %}
+
+{% block footer %}
+  {% include "partials/join_us.html" %}
+  {{ super() }}
+{% endblock %}
