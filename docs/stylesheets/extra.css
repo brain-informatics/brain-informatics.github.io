@@ -40,8 +40,23 @@ a:focus-visible,
 }
 
 /* Glassy navbar, at every width: a light paper tint keeps the nav legible
-   over whatever scrolls under it. */
+   over whatever scrolls under it.
+   The tint + blur live on a ::before layer behind the header's contents,
+   NOT on .md-header itself: backdrop-filter makes an element the
+   containing block for its position:fixed descendants, and Material's
+   phone search overlay (.md-search__inner, fixed, full-screen below 60em)
+   lives inside the header. With the blur on .md-header, that overlay was
+   clipped to the 48px header height and search results never showed on
+   mobile. */
 .md-header {
+    background-color: transparent;
+}
+
+.md-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     background-color: rgba(246, 246, 243, 0.72);
     backdrop-filter: blur(20px); /* Blur effect */
     -webkit-backdrop-filter: blur(20px); /* Safari support */
@@ -471,9 +486,9 @@ h2.no-click a {
 /* Pin "Join Us" to its original look: the site-wide heading weight/size
    and .pub_button shape changes above must not reach this band. Values
    are the pre-refresh computed styles (Material's h1 defaults, and the
-   white/blue palette's link + accent colors, which are also the site's
-   current colors; they're pinned so a future palette change can't leak
-   in either). */
+   white palette's link color). The button hover deliberately follows the
+   theme's accent color (mkdocs.yml `accent`), like every other
+   .pub_button on the site. */
 .get-involved h1 {
     font-size: 2em;
     font-weight: 300;
@@ -489,7 +504,7 @@ h2.no-click a {
 
 .get-involved .pub_button:focus,
 .get-involved .pub_button:hover {
-    background-color: #4287ff;
-    border-color: #4287ff;
-    color: #fff !important;
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color) !important;
 }
