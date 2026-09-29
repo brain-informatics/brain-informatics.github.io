@@ -75,8 +75,8 @@ hide:
       <div class="tcontainer" markdown="1">
         <h2>Anupam Sharma</h2>
         <p class="ttitle">Joined - 2024</p>
-        <p>Brain-Computer Interface, EEG, Deep learning, Representation learning, Meta-learning</p>
-        <p><a href="mailto:sharmaanupam@iitgn.ac.in" class="pub_button">sharmaanupam@iitgn.ac.in</a> </br> <a href="https://anp-scp.github.io" class="pub_button" target="_blank">Website</a></p>
+        <p>EEG Dcoding, Deep learning, Representation learning, Meta-learning</p>
+        <p><a href="mailto:sharmaanupam@iitgn.ac.in" class="pub_button">sharmaanupam@iitgn.ac.in</a> </br> <a href="https://anupamsharma.in/" class="pub_button" target="_blank">Website</a></p>
         
       </div>
     </div>
@@ -100,12 +100,40 @@ hide:
     </div>
   </div>
 
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/people/Sanlap-Kundu.jpg" alt="Sanlap Kundu" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Sanlap Kundu</h2>
+        <p class="ttitle">Joined - 2025</p>
+        <p>Stroke Rehabilitation, Neurosciences and Neurorehabilitation, EEG and fNIRS</p>
+        <p><a href="mailto:sanlap.kundu@iitgn.ac.in" class="pub_button">sanlap.kundu@iitgn.ac.in</a> </p>
+        <div style="height:45px;"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 ## Masters Students
 ---
 
 <div class="trow">
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="/assets/team/pradipto.jpg" alt="Pradipto" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Pradipto</h2>
+        <p class="ttitle">M.Sc. | Joined - 2023</p>
+        <p><a href="mailto:pradipto.23510081@iitgn.ac.in" class="pub_button">pradipto.23510081@iitgn.ac.in</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="tcolumn">
     <div class="tcard">
       <!--
@@ -113,24 +141,63 @@ hide:
       <img src="/assets/team/divyansh.jpg" alt="Divyansh Saini" style="height:222.06px; width: auto; margin-left:auto; margin-right: auto;">
       </div>
       -->
-      <img src="/assets/team/divyansh.png" alt="Divyansh Saini" style="width:100%">
+      <img src="https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/people/Komal-Chandela.jpeg" alt="Komal Chandela" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Divyansh Saini</h2>
-        <p class="ttitle">M.Tech. | Joined - 2023</p>
-        <p>Eye Tracking</p>
-        <p><a href="mailto:divyansh.saini@iitgn.ac.in" class="pub_button">divyansh.saini@iitgn.ac.in</a> <a href="https://www.linkedin.com/in/divyansh-saini-292573203/" class="pub_button" target="_blank">Profile</a></p>
+        <h2>Komal Chandela</h2>
+        <p class="ttitle">M.Sc. | Joined - 2025</p>
+        <!-- <p>Eye Tracking</p> -->
+        <p><a href="mailto:komal.chandela@iitgn.ac.in" class="pub_button">komal.chandela@iitgn.ac.in</a> </p>
+        
       </div>
     </div>
   </div>
 
   <div class="tcolumn">
     <div class="tcard">
-      <img src="/assets/team/sawan.jpg" alt="Sawan Verma" style="width:100%">
+      <img src="https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/people/Shreya-Anandashankar-.jpg" alt="Shreya Anand" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Sawan Verma</h2>
-        <p class="ttitle">M.Tech. | Joined - 2023</p>
-        <p>Brain Computer Interface</p>
-        <p><a href="mailto:sawan.verma@iitgn.ac.in" class="pub_button">sawan.verma@iitgn.ac.in</a> </br> <a href="https://www.linkedin.com/in/sawan-verma-a20280144/" class="pub_button" target="_blank">Profile</a></p>
+        <h2>Shreya Anand</h2>
+        <p class="ttitle">M.Sc. | Joined - 2025</p>
+        <!-- <p>Brain Computer Interface</p> -->
+        <p><a href="mailto:shreya.anandashankar@iitgn.ac.in" class="pub_button">shreya.anandashankar@iitgn.ac.in</a> </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/people/Smruti-Shubhadarshini-Behera-.jpg" alt="Smruti Shubhadarshini Behera" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Smruti Shubhadarshini Behera</h2>
+        <p class="ttitle">M.Sc. | Joined - 2025</p>
+        <!-- <p>Brain Computer Interface</p> -->
+        <p><a href="mailto:smruti.behera@iitgn.ac.in" class="pub_button">smruti.behera@iitgn.ac.in</a> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="https://raw.githubusercontent.com/brain-informatics/brain-informatics.github.io/refs/heads/assets-branch/people/Tanisha-Podder-.jpg" alt="Tanisha Podder" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Tanisha Podder</h2>
+        <p class="ttitle">M.Sc. | Joined - 2025</p>
+        <p></p>
+        <p><a href="mailto:tanisha.podder@iitgn.ac.in" class="pub_button">tanisha.podder@iitgn.ac.in</a> </p>
+        <div style="height:32px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tcolumn">
+    <div class="tcard">
+      <img src="/assets/team/user.png" alt="Ankit Dhurve" style="width:100%">
+      <div class="tcontainer" markdown="1">
+        <h2>Ankit Dhurve</h2>
+        <p class="ttitle">M.Tech. | Joined - 2025</p>
+        <p><a href="mailto:ankit.dhurve@iitgn.ac.in" class="pub_button">ankit.dhurve@iitgn.ac.in</a> </p>
+        <div style="height:32px;"></div>
       </div>
     </div>
   </div>
@@ -139,43 +206,20 @@ hide:
 </div>
 
 <div class="trow">
+  
+
   <div class="tcolumn">
     <div class="tcard">
-      <img src="/assets/team/nimisha.jpg" alt="Nimisha Bodra" style="width:100%">
+      <img src="/assets/team/user.png" alt="Kolla Jaya Prakash" style="width:100%">
       <div class="tcontainer" markdown="1">
-        <h2>Nimisha Bodra</h2>
-        <p class="ttitle">M.Sc. | Joined - 2023</p>
-        <p></p>
-        <p><a href="mailto:bodranimisha@iitgn.ac.in" class="pub_button">bodranimisha@iitgn.ac.in</a> </br> <a href="http://www.linkedin.com/in/nimisha-b-a810a8129" class="pub_button" target="_blank">Profile</a></p>
-        <div style="height:134.52px;"></div>
+        <h2>Kolla Jaya Prakash</h2>
+        <p class="ttitle">M.Tech. | Joined - 2025</p>
+        <p><a href="mailto:kolla.jaya@iitgn.ac.in" class="pub_button">kolla.jaya@iitgn.ac.in</a> </p>
       </div>
     </div>
   </div>
 
-  <div class="tcolumn">
-    <div class="tcard">
-      <img src="/assets/team/shweta.jpg" alt="Shweta" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Shweta Anand</h2>
-        <p class="ttitle">M.Sc. | Joined - 2023</p>
-        <p>Cognitive & Behavioural Neuroscience, Phenomenology, Neuromarketing, Criminal Psychology, Attention & Perception, Neurodegenerative Diseases, Clinical Audit, Animal Behaviour</p>
-        <p><a href="mailto:shweta.anand@iitgn.ac.in" class="pub_button">shweta.anand@iitgn.ac.in</a> </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tcolumn">
-    <div class="tcard">
-      <img src="/assets/team/pradipto.jpg" alt="Pradipto" style="width:100%">
-      <div class="tcontainer" markdown="1">
-        <h2>Pradipto</h2>
-        <p class="ttitle">M.Sc. | Joined - 2023</p>
-        <p>Brainwave entrainment, Morality, Cognitive Modelling, Evolutionary Neuropsychology</p>
-        <p><a href="mailto:pradipto.23510081@iitgn.ac.in" class="pub_button">pradipto.23510081@iitgn.ac.in</a></p>
-        <div style="height:85.52px;"></div>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 
