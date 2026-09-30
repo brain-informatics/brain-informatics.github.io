@@ -1,0 +1,69 @@
+/* Homepage "Recent Publications" cards — thumbnails restored from the
+   original carousel, matched to their papers via each post's own
+   `image:` front matter. */
+
+.pub-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-radius: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-title {
+  font-size: 0.85rem;
+}
+
+.pub-meta {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: -0.6rem;
+}
+
+/* Force exactly 4 (smaller) columns instead of Material's default auto-fit,
+   which only fit 3 per row at desktop widths. */
+.md-typeset .pub-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* On narrower screens (tablet and phone), scroll the cards horizontally
+   instead of squeezing them into 4 cramped columns or stacking full-width. */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset .pub-grid {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+
+  .md-typeset .pub-grid > ul > li {
+    flex: 0 0 45%;
+    scroll-snap-align: start;
+  }
+}
+
+/* Phone: one card at a time, with the next one peeking in at the edge. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .pub-grid > ul > li {
+    flex: 0 0 80%;
+  }
+}
+
+/* Homepage "Research Directions" cards — same Material grid-cards hover
+   animation as the publication cards above, forced to 3 even columns. */
+.research-title {
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .research-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .research-grid {
+    grid-template-columns: 1fr;
+  }
+}

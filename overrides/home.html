@@ -1,0 +1,101 @@
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+{% extends "main.html" %}
+
+<!-- Page content -->
+{% block container %}
+  <div class="md-content md-content--home" data-md-component="content">
+    <div class="md-content__inner">
+
+      <!-- Header -->
+      <header class="md-typeset">
+        {{ page.content }}
+      </header>
+
+      <!-- Research Directions + Recent Publications: light full-bleed band -->
+      <div class="home-band home-band--light">
+        <div class="home-band__inner">
+
+          <!-- Research Directions -->
+          <div class="md-typeset">
+            <h1>Research Directions</h1>
+            <div class="grid cards research-grid">
+              <ul>
+                <li>
+                  <p class="research-title"><strong>Music, Audio &amp; Auditory Neuroscience</strong></p>
+                  <p>How the brain encodes and responds to music and speech,
+                  identifying songs and listeners from EEG, what makes music
+                  enjoyable or aesthetically rated, and decoding speech and
+                  auditory perception from neural signals.</p>
+                </li>
+                <li>
+                  <p class="research-title"><strong>Brain-Computer Interfaces &amp; Neural Decoding</strong></p>
+                  <p>Building BCIs for motor imagery and stroke rehabilitation.
+                  Decoding EEG into images, text, and cognitive states with
+                  deep learning, including continual and adaptive learning
+                  approaches for real-world BCI use.</p>
+                </li>
+                <li>
+                  <p class="research-title"><strong>Meditation, Mindfulness &amp; Contemplative Neuroscience</strong></p>
+                  <p>Characterizing brain-network across meditation
+                  traditions, classifying meditator expertise and mind-wandering
+                  from EEG, and building real-time neurofeedback systems for
+                  practice.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <br>
+          
+          <!-- Recent publications, pulled live from the publications blog -->
+          <div class="md-typeset">
+            <h1>Recent Publications</h1>
+            <div class="grid cards pub-grid">
+              <ul>
+                {% for post in posts[:4] %}
+                {% set category = post.categories[0].title if post.categories else "" %}
+                <li>
+                  <p><img class="pub-thumb" src="{{ (post.meta.image or 'assets/pub_cards/dummy.png') | url }}" alt=""></p>
+                  <p class="pub-title"><strong><a href="{{ post.meta.direct_link or post.url }}" target="_blank">{{ post.title }}</a></strong></p>
+                  <p class="pub-meta">
+                    {{ post.config.date.created | date }}
+                    {%- if category == "Preprint" %} &middot; Preprint
+                    {%- elif post.meta.tags %} &middot; {{ post.meta.tags | join(', ') }}
+                    {%- endif %}
+                  </p>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <p><a class="pub_button" href="publications/">All Publications</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- "Join Us" is rendered site-wide by docs/overrides/main.html
+           (partials/join_us.html), right after this content. -->
+    </div>
+  </div>
+{% endblock %}
