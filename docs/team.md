@@ -229,6 +229,8 @@ hide:
 
 ## Masters Students
 
+- [Sawan Verma (MTech 2025) | AI Research Scientist at AI Center of Excellence](https://www.linkedin.com/in/im-sawan-verma/)
+- [Atharv Nangare (MSc 2025) | PhD at IITGN](https://www.linkedin.com/in/atharv-nangare-50808920a/)
 - [Chailex Sarma (MTech 2024 | Software Developer at LinkMD)](https://www.linkedin.com/in/chailex-sarma-25234111b/)
 - [Navneet Sharma (MTech 2024 | Hardware Developer at IBM)](https://www.linkedin.com/in/navneet-sharma-224368166/)
 - [Anupam Sharma (MTech 2024) | PhD at IITGN](https://anp-scp.github.io/)
@@ -254,6 +256,7 @@ hide:
 
 ## PhD Students
 
+- [Shriraj Sawant (PhD 2025) | Senior AI Domain Expert at AfterQuery Experts](https://www.linkedin.com/in/drshrirajsawant/)
 - [Pankaj Pandey (PhD 2023 | Postdoc at St. Jude Children's Research Hospita - ALSAC)](https://www.linkedin.com/in/pankaj-pandey-2bb66749/)
 - Richa Tripathi (PhD 2021)
 - Shruti Goyal (PhD 2020)
